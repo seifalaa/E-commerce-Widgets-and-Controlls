@@ -2,12 +2,13 @@ body{
     margin: 0px;
 }
 #big-container{
-    background-color: blueviolet;
+    background-color: red;
     height: 300px;
 }
 #card{
     height: 20px;
     width: 20px;
+ background-color: blue;
     
     
    
