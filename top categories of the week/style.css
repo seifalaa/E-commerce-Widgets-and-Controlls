@@ -27,10 +27,12 @@ ul {
 #cell {
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.151);
+    transition: 0.7s;
 }
 #cell:hover {
+    transform: scale(1.05, 1.05);
     border-radius: 3px;
-    border: 1px solid rgb(255, 117, 38);
+    border: 2px solid dodgerblue ;
     box-shadow: 0 0 5px #0000004a;
 }
 .col-lg-4.col-md-4.col-sm-4.col-4.m-0 {
@@ -182,8 +184,37 @@ ul {
 .col-lg-5.col-md-12.col-sm-12.col-12p-0.m-0 {
     padding: 15px;
 }
-h1 {
+.alves.flash {
     margin: 0px;
     FONT-SIZE: 21PX;
     padding-left: 17px;
+    
+}
+
+.container-fluid.bounceInUp{
+    
+   
+    
+
+}
+
+
+.list-group{
+   
+    flex-direction: initial;
+    display: initial;
+}
+.list-group-item{
+    
+    font-size: 1.1vw;
+    text-align: initial;
+    border: initial;
+    padding: initial;
+    margin: initial;
+   
+}
+.list-group-item:first-child {
+    padding-top: 8px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
 }
