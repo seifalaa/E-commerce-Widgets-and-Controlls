@@ -10,13 +10,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="../top categories of the week/main.js"></script>
     <link rel="stylesheet" href="../top categories of the week/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Grid creator</title>
 </head>
 
 <body>
     <div class="container-fluid" id="con">
         <h1>Grid Creator</h1>
-        <form action="#" class="needs-validation" novalidate onsubmit="createGrid()">
+        <form action="#" id="form1" class="needs-validation" novalidate>
             <div class="form-group">
                 <label for="numRows">Number of Rows:</label>
                 <input type="text" class="form-control" id="numRows" placeholder="Enter Number of Rows" name="numRows"
@@ -31,23 +32,26 @@
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
-            <div class="form-group">
-                <label for="picLinks">Pictures Sources:</label>
-                <textarea class="form-control" rows="5" id="picLinks" placeholder="Enter Pictures Sources"
-                    required></textarea>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-            </div>
-            <div class="form-group">
-                <label for="listsData">Lists Data:</label>
-                <textarea class="form-control" rows="5" id="listsData" placeholder="Enter Lists Data"
-                    required></textarea>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" id="btn1" class="btn btn-primary">Enter Data</button>
         </form>
+        <div class="p-3" style="height: 30px;"></div>
+
+        <div id="container" class="border p-2" style="width: 100%;height: 190px;overflow-y: scroll;"></div>
+
+        <div class="container-fluid pt-3">
+            <form action="#" id="form3" class="needs-validation" novalidate>
+                <div class="form-group t1">
+                    <label for="numCols">Enter Items for each brand (head included): </label>
+                    <div id="row1" class="row py-3 px-2 border">
+
+                    </div>
+                </div>
+                <button type="submit" id="btn2" class="btn btn-primary">Create Grid</button>
+            </form>
+
+        </div>
+
+
     </div>
     <script>
         // Disable form submissions if there are invalid fields
